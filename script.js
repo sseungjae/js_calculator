@@ -9,8 +9,13 @@ function getOutput(){
 	return document.getElementById("output-value").innerText;
 }
 
-
 function printOutput(num){
-	document.getElementById("output-value").innerText=num;
+	document.getElementById("output-value").innerText=getFormattedNumber(num);
 }
+function getFormattedNumber(num){
+    var n = Number(num);
+    var value = n.toLocaleString("en");
+    return value;
+}
+
 printOutput("123123");
