@@ -34,3 +34,10 @@ for(var i = 0; i<operator.length; i++){
 		alert("The operator clocked:"+this.id);
 	})
 }
+
+var number = document.getElementsByClassName("number");
+for(var i = 0; i<operator.length; i++){
+	number[i].addEventListener('click', function(){
+		alert("The operator clocked:"+this.id);
+	})
+}
